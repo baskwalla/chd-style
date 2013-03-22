@@ -1,0 +1,19 @@
+
+// Vendor Imports //
+@import "vendor/normalize";
+
+// Base Imports //
+@import "base/typography";
+
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 33.333em;
+}
+
+.nav {
+  
+  li {
+  	display: inline;
+  }
+}

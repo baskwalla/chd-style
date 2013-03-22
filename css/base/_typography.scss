@@ -1,0 +1,100 @@
+// ************ Variables ************
+
+// Base Font Types
+$base-font: "minion-pro", Georgia, serif;
+$heading-font: "freight-sans-pro", sans-serif;
+
+// Base Font Sizes
+$line-height: 27px;
+$base-font-size: 16px;
+$base-body-font: 21px;
+$blockquote: 30px;
+
+$font: $base-body-font/$base-font-size + rem;
+$leading: $line-height/$base-font-size + rem;
+$blockquote: $blockquote/$base-font-size + rem;
+
+// Headings
+$h1-size: 37px;
+$h2-size: 28px;
+$h1: $h1-size/$base-font-size + rem;
+$h2: $h2-size/$base-font-size + rem;
+
+// Typographic Color
+$base-font-color: #333;
+$heading-color: #111;
+
+// ************ CSS ************
+
+html {
+	font-size: 100%;
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: $base-font;
+  color: $base-font-color;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 40em;
+  margin-top: 2em;
+}
+
+blockquote {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: 1rem;
+	font-size: $blockquote;
+	line-height: $leading;
+	text-align: left;
+	color: rgba(140,138,138,1);
+	font-family: $base-font;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1, h2 {
+  font-family: $heading-font;
+  line-height: $leading;
+  color: $heading-color;
+  margin-bottom: 0rem;
+}
+
+h1 {
+	font-size: $h1;
+}
+
+h2 {
+	font-size: $h2;
+}
+
+p {
+  font-size: $font;
+  color: $base-font-color;
+}
+
+p + p {
+  text-indent: 1rem;
+}
+
+.main-head {
+  font-size: 3.75rem;
+  line-height: $leading;
+}
+
+.sub-head {
+	font-size: 1.5em; //
+	line-height: $leading;
+	font-family: $heading-font;
+	color: orange;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.intro {
+    font-size: 1.5em; //
+    line-height: $leading; 
+	font-family: $base-font;
+	font-style: italic;
+	color: rgba(0,0,9,1); //
+}

@@ -1,0 +1,31 @@
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// Grid starts at mobile/IE first
+
+.main {
+  width: 100%;
+  display: inline-block;
+}
+
+.blog {
+	width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 40em) {
+	.main {
+		width: 20%;
+		float: left;
+	}
+
+	.blog {
+		width: 80%;
+		float: left;
+	}
+}
